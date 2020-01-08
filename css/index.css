@@ -1,0 +1,141 @@
+@media (max-width: 568px) {
+  .navbar-nav {
+    display: none;
+  }
+}
+@media (min-width: 568px) {
+  .open-slide {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Russo One', sans-serif;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+.navbar {
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #fbb338;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar ul {
+  padding: 8px 0 0 0;
+  list-style: none;
+}
+.navbar a:hover {
+  color: #000;
+}
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.8s;
+}
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.8s;
+}
+.side-nav a:hover {
+  color: #fff;
+}
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  color: #fbb338;
+  line-height: 1.6;
+  background-color: #000;
+  background-image: url('../img/showcase.jpg');
+}
+#showcase {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+#showcase h1 {
+  font-size: 70px;
+  line-height: 1.2;
+  margin-top: 10%;
+}
+.arrow {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.arrow span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-bottom: 5px solid #06a8ff;
+  border-right: 5px solid #06a8ff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
