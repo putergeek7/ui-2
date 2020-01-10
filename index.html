@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Russo+One&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/index.css" />
+        <title>WorkOut Logs</title>
+    </head>
+
+    <body>
+        <!-- CODE FOR HAMBURGER MENU -->
+        <nav class="navbar">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#FBB338" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="#FBB338" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#FBB338" stroke-width="5" />
+                    </svg>
+                </a>
+            </span>
+
+            <!-- CODE FOR NAVBAR -->
+            <ul class="navbar-nav">
+                <li><a href="#index.html">Home</a></li>
+                <li><a href="#team">About</a></li>
+                <li><a href="#contact-container">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- CODE FOR COMPANY NAME -->
+        <header id="showcase">
+            <h1>WorkOut Logs</h1>
+
+            <h2>Meet Our Team</h2>
+        </header>
+
+        <!-- LINKS FOR SIDE MENU -->
+        <div id="side-menu" class="side-nav">
+            <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="#index.html">Home</a>
+            <a href="#team">About</a>
+            <a href="#contact-container">Contact</a>
+        </div>
+
+        <!-- JAVASCRIPT CODE FOR SIDE MENU WIDTH WHEN OPENS AND CLOSES -->
+        <script>
+            function openSlideMenu() {
+                document.getElementById('side-menu').style.width = '175px';
+                document.getElementById('showcase').style.marginLeft = '175px';
+            }
+
+            function closeSlideMenu() {
+                document.getElementById('side-menu').style.width = '0';
+                document.getElementById('showcase').style.marginLeft = '0';
+            }
+        </script>
+
+        <!-- CODE FOR ARROW POINTING TO ABOUT US DESCRIPTION -->
+        <div class="arrow">
+            <span></span>
+        </div>
+
+        <!-- CODE FOR WHY APP WAS CREATED IN ABOUT SECTION -->
+        <section id="team">
+            <h2 class="team-work">Why We Created WorkOut Logs</h2>
+            <div class="about-team">
+                <p class="prg-1">You work hard every day. You do everything humanly possible to meet your family's needs and make sure they are healthy and happy. One day, you are on a family vacation and go to the nearest gym but you realize  you forgot your workout journal at home. What do you do? Well, we have been in your shoes before, and decided to take the frustration off your shoulders and create a WorkOut Log app so no matter where you are you can always keep track of your daily exercise routines.</p>
+                <br>
+                <p class="prg-2">Welcome to WorkOut Log! Throw away your paper exercise journal and use our app where your workout info is securely stored and easily retrieved on any device. You can effortlessly create an account, enter and organize your exercises, log your body weight, view or edit past data, as well as backup and store your exercise journal into your secure cloud account.</p>
+            </div>
+        </section>
+        </div>
+
+        
+        <!-- CODE AND IMAGES PRESENTING DEVELOPER TEAM -->
+        <section id="top-row">
+            <div class="team-mate">
+                <img src="img/Christian Ford.png" alt="Introducing Project Manager: Christian Ford" class="team-img" />
+                <h3>Christian Ford</h3>
+                <h3>Program Manager</h3>
+                <a href="https://github.com/christian-ford"
+                    ><img class="github" src="img/github.png" alt="github logo"
+                /></a>
+            </div>
+
+            <div class="team-mate">
+                <img src="img/Pat DeYoung.jpg" alt="Introducing Web User Interface Developer: Pat DeYoung" class="team-img" />
+                <h3>Pat DeYoung</h3>
+                <h3>Web User Interface Dev</h3>
+                <a href="https://github.com/putergeek7"
+                    ><img class="github" src="img/github.png" alt="github logo"
+                /></a>
+            </div>
+
+            <div class="team-mate">
+                <img src="img/Nyjae Lee.jpg" alt="Introducing Web User Interface Developer: Nyjae Lee" class="team-img" />
+                <h3>Nyjae Lee</h3>
+                <h3>Web User Interface Dev</h3>
+                <a href="https://github.com/naj10000"
+                    ><img class="github" src="img/github.png" alt="github logo"
+                /></a>
+            </div>
+
+            <div class="team-mate">
+                <img src="img/Greg Hayes.jpg" alt="Introducing Web React 1 Developer: Greg Hayes" class="team-img" />
+                <h3>Greg Hayes</h3>
+                <h3>Web React I Dev</h3>
+                <a href="https://github.com/hayesdev"
+                    ><img class="github" src="img/github.png" alt="github logo"
+                /></a>
+            </div>
+        </section>
+
+        <section class="bottom-row">
+            <div class="team-mate">
+                <img src="img/Hiter Harris.png" alt="Introducing Web React 1 Developer: Hiter Harris IV" class="team-img" />
+                <h3>Hiter Harris IV</h3>
+                <h3>Web React I Dev</h3>
+                <a href="https://github.com/hiterharris?tab=repositories"
+                    ><img class="github" src="img/github.png" alt="github logo"
+                /></a>
+            </div>
+
+            <div class="team-mate">
+                <img src="img/Spencer McQuire.png" alt="Introducing Web React 2 Developer: Spencer McQuire" class="team-img" />
+                <h3>Spencer McGuire</h3>
+                <h3>Web React II Dev</h3>
+                <a href="https://github.com/spencer-mcguire"
+                    ><img class="github" src="img/github.png" alt="github logo"
+                /></a>
+            </div>
+
+            <div class="team-mate">
+                <img src="img/Coltyn Wiewel.png" alt="Introducing Web React 2 Developer: Coltyn Wiewel" class="team-img" />
+                <h3>Coltyn Wiewel</h3>
+                <h3>Web React II Dev</h3>
+                <a href="https://github.com/coltynw"
+                    ><img class="github" src="img/github.png" alt="github logo"
+                /></a>
+            </div>
+
+            <div class="team-mate">
+                <img src="img/Nicole Hollis.png" alt="Introducing Web Backend Developer: Nicole Hollis" class="team-img" />
+                <h3>Nicole Hollis</h3>
+                <h3>Web Backend Dev</h3>
+                <a href="https://github.com/beautytech"
+                    ><img class="github" src="img/github.png" alt="github logo"
+                /></a>
+            </div>
+        </section>
+
+
+        <!-- CODE FOR CONTACT US FORM -->
+        <section id="contact-container">
+        <div class="container">
+            <div style="text-align:center">
+              <h2>Contact Us</h2>
+              <p>Swing by for a cup of coffee, or leave us a message:</p>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="img/unattended-dumbbell.jpg" style="width:100%">
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="Your name..">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CODE FOR COPYRIGHT INFO IN FOOTER SECTION -->
+
+        <footer class="copyright">
+            <p>@Copyright WorkOut Logs 2020</p>
+        </footer>
+
+    </body>
+</html>
