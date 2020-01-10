@@ -1,0 +1,55 @@
+// MARGIN FOR CONTACT CONTAINER
+#contact-container {
+	margin-top: 5%;
+}
+
+// CODE FOR BUTTON
+input[type='text'],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type='submit'] {
+	background-color: #22283a;
+	color: #fbb338;
+	font-size: 1.5rem;
+	padding: 12px 20px;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	border: 1px solid #fbb338;
+}
+
+// HOVER BUTTON COLOR
+input[type='submit']:hover {
+	background-color: #06a8ff;
+}
+
+/* CREATED ONE COLUMN THAT FLOAT NEXT TO EACH OTHER */
+.column {
+	float: left;
+	width: 50%;
+	margin-top: 6px;
+	padding: 20px;
+}
+
+/* CLEAR FLOATS AFTER THE COLUMN */
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* RESPONSIVE LAYOUT - WHEN SCREEN IS LESS THAN 500PX WIDE, MAKES IN INTO ONE COLUMN */
+@media screen and (max-width: 500px) {
+	.column,
+	input[type='submit'] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
